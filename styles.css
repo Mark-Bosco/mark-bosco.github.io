@@ -1,0 +1,330 @@
+@import url('./fontawesome-free-6.5.2-web/css/all.min.css');
+@import url("https://use.typekit.net/lqx3eae.css");
+
+body {
+    font-family: 'ltc-goudy-oldstyle-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+header {
+    text-align: center;
+    background-color: #517063;
+    padding: 20px 0;
+}
+
+header .title {
+    font-size: 7em;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    background-color: #e3dfc8;
+    padding: 10px 20px;
+    font-weight: bold;
+    gap: 75px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #425378;
+    font-size: 2.0em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #2d3d5e;
+    transform: scale(1.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 0px;
+}
+
+section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -40px;
+}
+
+.about-me .content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-me .image {
+    flex: 0 0 200px;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.about-me .image img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.list {
+    list-style-type: circle;
+    margin-top: 0%;
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.list a {
+    color: #aa631b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.list a:hover {
+    color: #795129;
+}
+
+.about-me .list {
+    list-style-type: none;
+    margin-top: 0;
+    font-size: 1.1em;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.about-me .header {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.box-header {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.box-header ::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #5b50487a;
+}
+
+.box-header i {
+    margin-right: 10px;
+    color: #425378;
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    margin-left: 25px;
+    gap: 10px;
+}
+
+.badge-list-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #517063;
+    color: #e9e7db;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-size: 1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.badge:hover {
+    background-color: #3d574c;
+    transform: scale(1.05);
+}
+
+.badge a {
+    color: #e9e7db;
+    text-decoration: none;
+}
+
+.reading-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.reading-text {
+    background-color: #425378;
+    color: #e9e7db;
+    padding: 5px 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.currently-reading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ebe8d8;
+    padding: 20px;
+    max-width: 400px;
+    align-self: center;
+    border-radius: 20px;
+}
+
+.book-details-container {
+    display: flex;
+    align-items: center;
+}
+
+.book-cover {
+    margin-right: 20px;
+}
+
+.book-cover img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.book-info {
+    text-align: left;
+}
+
+.book-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.book-author {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.book-description {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.badge-box {
+    background-color: #ebe8d8;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skill-levels {
+    display: grid;
+    gap: 15px;
+}
+
+.skill-level {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 5px; /* Added bottom margin */
+}
+
+.skill-level .badge-list {
+    margin-left: 0px;
+    justify-content: flex-start;
+    margin-top: 1px;
+}
+
+.skill-level h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: none;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 5px;
+    color: #aa631b;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0vw;
+    width: 12vw;
+    height: 4px;
+    background-color: #834d1796;
+}
+
+.divider {
+    height: 10px;
+    background-color: #aa631b;
+    margin-bottom: -20px;
+}
+
+.footer {
+    background-color: #517063;
+    color: #e9e7db;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+footer .divider {
+    height: 10px;
+    margin-bottom: 0px;
+    background-color: #aa631b;
+}
