@@ -90,6 +90,7 @@ section h2 {
 
 .about-me .image img {
     width: 100%;
+    max-width: 200px;
     border-radius: 50px;
 }
 
@@ -273,7 +274,8 @@ section h2 {
     grid-template-columns: max-content 1fr;
     gap: 10px;
     align-items: center;
-    margin-bottom: 5px; /* Added bottom margin */
+    margin-bottom: 5px;
+    /* Added bottom margin */
 }
 
 .skill-level .badge-list {
@@ -327,4 +329,87 @@ footer .divider {
     height: 10px;
     margin-bottom: 0px;
     background-color: #aa631b;
+}
+
+@media (max-width: 1200px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me .image {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-me .list {
+        margin-right: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .currently-reading {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    html {
+        font-size: 16px;
+    }
+
+    header .title {
+        font-size: 8em;
+    }
+
+    nav a {
+        font-size: 1.75em;
+        margin: 0 0px;
+    }
+
+    .about-me {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+
+    header .title {
+        font-size: 6em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .book-details-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .book-cover {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .book-info {
+        text-align: center;
+    }
 }
