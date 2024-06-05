@@ -1,5 +1,9 @@
 @import url('./fontawesome-free-6.5.2-web/css/all.min.css');
 @import url("https://use.typekit.net/lqx3eae.css");
+html {
+    height: 100%;
+    margin: 0;
+}
 
 body {
     font-family: 'ltc-goudy-oldstyle-pro', serif;
@@ -9,6 +13,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
 }
 
 header {
@@ -51,6 +58,7 @@ nav a:hover {
 
 main {
     padding: 20px;
+    flex: 1 0 auto;
 }
 
 section {
@@ -178,17 +186,17 @@ section h2 {
     padding: 7px 12px;
     border-radius: 15px;
     font-size: 1em;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.badge:hover {
-    background-color: #3d574c;
-    transform: scale(1.05);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .badge a {
     color: #e9e7db;
     text-decoration: none;
+}
+
+.badge:has(a):hover {
+    background-color: #3d574c;
+    transform: scale(1.05);
 }
 
 .reading-header {
@@ -207,6 +215,12 @@ section h2 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.reading-text:hover {
+    transform: scale(1.1);
 }
 
 .currently-reading {
@@ -323,6 +337,7 @@ section h2::after {
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
+    flex-shrink: 0;
 }
 
 footer .divider {
